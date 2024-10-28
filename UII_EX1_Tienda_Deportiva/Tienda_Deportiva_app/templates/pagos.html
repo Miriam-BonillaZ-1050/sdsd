@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block titulo %} TIENDA DEPORTIVA {% endblock %}
+
+{% block cuerpo %}
+<h1>PAGOS/TRANSACCIONES DE LA TIENDA DEPORTIVA - Miriam Bonilla</h1>
+<ul>
+    {% for m in pagos %}
+    <ul>
+        {% for m in pagos %}
+        <li>{{ m.Id_pago }} .-.-.- {{ m.Fecha }} ,-,-,- {{ m.Monto }} .-.-.- {{ m.Contraseña }} ,-,-,- {{ m.Efectivo_o_Tarjeta }}</li>
+        {% endfor %}
+    </ul>
+    
+    {% endfor %}
+</ul>
+{% endblock %}
